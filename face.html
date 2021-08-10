@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="facebook.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" 
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+body{
+    background-color: #f0f2f5;
+}
+
+:root{
+    --a:#43609c;
+}
+input:focus{
+    outline: none;
+}
+
+.parent1{
+    background-color: var(--a);
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.child1{
+    background-color:var(--a);
+    padding: 20px 20px 5px 15%;
+    width: 97%;
+    height: 100%;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    color:white ;
+}
+.child2{
+    background-color:var(--a);
+    padding-top: 40px;
+    width: 24%;
+    height: 100%;
+    color:white ;
+    position: relative;
+}
+.parent1 input[type=text],.parent1 input[type=password] {
+    padding:3px;
+    position: absolute;
+    top: 55%;
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    border: 0.3px solid black; 
+}
+
+label{
+    position: absolute;
+    top: 28%;
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color:white;
+ 
+}
+.child3{
+    background-color:var(--a);
+    padding-top: 40px;
+    width: 55%;
+    height: 100%;
+    color: #8f93af;
+    position: relative;
+}
+.child3 a{
+    position: absolute;
+    top:82%;
+    text-decoration: none;
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color:#9cb4d8;
+
+}
+a:hover{
+    text-decoration: underline #9cb4d8 ;
+}
+.parent2{
+    display:flex;
+    justify-content: center;
+    background-color:#f0f2f5;
+    height:900px;
+}
+.c22{
+    background-color:#fff;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding-top: 10px;
+    width:35%;
+    height:62%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0.1px 0.1px 10px  #e2e6eb,-0.1px -0.1px 10px #e2e6eb;
+}
+hr {
+    width:100%;
+    margin:15px auto;
+    color: #dadde1;
+}
+.c22 p{    
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #606770;
+
+}
+.c22 h2{
+    color:#1c1e21;
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+form input{
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    border:1.2px solid #ccd0d5;
+    font-family: 'Roboto', sans-serif;;
+}
+.inside {
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   padding-top: 10px;
+}
+.inside input[type=month]{
+    margin: 15px 10px 0px 10px;
+}
+.inside label{
+    margin-top: 16.8%;
+    margin-left: 10px;
+    color: #606770;
+}
+.inside1{
+    display: flex;
+    align-items: flex-start;
+}
+.female, .male{
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    font-size: 15px;
+    border:1.2px solid #ccd0d5;
+    border-radius: 4px;
+}
+input[type=radio]{
+    margin-right: 0;
+    text-align: right;
+}
+.inside p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;;
+}
+#terms{
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   color: #777;
+   margin-top: 2%;
+   text-align: left;
+   margin-left: 10px;
+}
+#terms a{
+    text-decoration: none;
+    color:#385898;
+}
+#terms a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 200px;
+    font-size: 20px;
+    margin:5% 0;
+    padding: 5px;
+    font-weight:bold;
+    border-radius: 4px;
+    background-color: #00a400;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1">facebook</div>
+        <div class="child2">
+            <label for="mail">Email or Phone</label>
+            <input type="text" name="phone/mail" id="mail" size="18">
+        </div>
+        <div class="child3">
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass" size="18">
+            <a href="www.facebook.com">Forgot account?</a>
+        </div>
+    </div>
+  <div class="parent2">
+      <div class="c22">
+          <h2>Create a new account</h2>
+          <p>It's quick and easy.</p><hr>
+          <form>
+              <input type="text" name="fname" id="fname" placeholder="First name" size="25">
+              <input type="text" name="sname" id="sname" placeholder="Surname" size="25"><br>
+              <input type="email" name="email" id="email" placeholder="Mobile number or email address" 
+              size="58"> <br>
+              <input type="password" name="password" id="password" placeholder=" New password" size="58">
+              <div class="inside">
+                <label for="dob">Date of birth</label>
+                <input type="month" name="dob" id="dob" value="2021-08">
+                <p>Gender</p>
+                <div class="inside1">
+                    <div class="female">
+                        Female<input type="radio" name="gender" id="gender" value="female">
+                    </div>
+                    <div class="male">
+                        Male<input type="radio" name="gender" id="gender" value="male">
+                    </div>
+                </div>
+              </div>
+              <p id="terms">
+                By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update">Terms</a>, <a href="https://www.facebook.com/about/privacy/update">Data Policy</a> and <a href="https://www.facebook.com/policies/cookies/">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+              </p>
+              <button type="submit">Sign Up</button>
+          </form>
+          <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjI4NTE1MTAwLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" style="font-size: 17px;text-decoration: none;color: #1877f2;">Already have an account?</a>
+      </div>
+  </div>
+</body>
+</html>
